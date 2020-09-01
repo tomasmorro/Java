@@ -1,0 +1,27 @@
+package com.sinensia.dummydb.backend.services;
+
+import java.util.Date;
+import java.util.List;
+
+import com.sinensia.dummydb.backend.model.Producto;
+
+public interface ProductoServices {
+
+	/**
+	 * 
+	 * el producto nuevo llega sin codigo. El sistema otorga un código
+	 * 
+	 */
+	public Producto create(Producto producto); 
+	
+	public Producto getByCodigo(Long codigo);
+	
+	public List<Producto> getAll();
+	
+	public List<Producto> getBetweenPrecioRange(double min, double max);
+	
+	public List<Producto> getBetweenFechas(Date fecha1, Date fecha2);
+	
+	public List<Producto> getDescatalogados();
+	
+}
