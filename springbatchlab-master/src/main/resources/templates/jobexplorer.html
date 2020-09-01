@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Job Explorer</title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<th>job name</th>
+			<th>description</th>
+			<th>trigger</th>
+		</tr>
+		<tr>
+			<td>job1</td>
+			<td></td>
+			<td><a href="/trigger/job1">/trigger/job1</a></td>
+		</tr>
+		<tr>
+			<td>job2</td>
+			<td></td>
+			<td><a href="/trigger/job2">/trigger/job2</a></td>
+		</tr>
+		<tr>
+			<td>job3</td>
+			<td></td>
+			<td><a href="/trigger/job3">/trigger/job3</a></td>
+		</tr>
+		<tr>
+			<td>job4</td>
+			<td>
+				<p>Pasa datos de la tabla PRODUCTS al fichero materiales/salidas/ejemplo04_productos.csv</p>
+				<p>Se inicluye un ItemProcessor  Product,Product  que no realiza ninguna tarea!</p>
+				<p>El reader recibe un parámetro String para que la query filtre el producto por familia.</p>
+			</td>
+			<td><a href="/trigger/job4?familia=hardware">/trigger/job4?familia=hardware</a></td>
+		</tr>
+		<tr>
+			<td>job5</td>
+			<td></td>
+			<td><a href="/trigger/job4">/trigger/job5</a></td>
+		</tr>
+		<tr>
+			<td>job6</td>
+			<td></td>
+			<td><a href="/trigger/job6">/trigger/job6</a></td>
+		</tr>
+		<tr>
+			<td>job7</td>
+			<td></td>
+			<td><a href="/trigger/job7">/trigger/job7</a></td>
+		</tr>
+		<tr>
+			<td>job8</td>
+			<td></td>
+			<td><a href="/trigger/job8">/trigger/job8</a></td>
+		</tr>
+		<tr>
+			<td>job9</td>
+			<td></td>
+			<td><a href="/trigger/job9">/trigger/job9</a></td>
+		</tr>
+		<tr>
+			<td>job10</td>
+			<td></td>
+			<td><a href="/trigger/job10">/trigger/job10</a></td>
+		</tr>
+		<tr>
+			<td>job11</td>
+			<td></td>
+			<td><a href="/trigger/job11">/trigger/job11</a></td>
+		</tr>
+		<tr>
+			<td>job12</td>
+			<td></td>
+			<td><a href="/trigger/job12">/trigger/job12</a></td>
+		</tr>
+		<tr>
+			<td>job13</td>
+			<td></td>
+			<td><a href="/trigger/job13">/trigger/job13</a></td>
+		</tr>
+		<tr>
+			<td>job14</td>
+			<td></td>
+			<td><a href="/trigger/job14">/trigger/job14</a></td>
+		</tr>
+		<tr>
+			<td>job15</td>
+			<td></td>
+			<td><a href="/trigger/job15">/trigger/job15</a></td>
+		</tr>
+	</table>
+	<h2>Job Executions</h2>
+	<table border="1">
+		<tr>
+			<th>Id</th>
+			<th>Job Id</th>
+			<th>Job Name</th>
+			<th>Exit Code</th>
+			<th>Create Time</th>
+			<th>Start Time</th>
+			<th>End Time</th>
+		</tr>
+   		<tr th:each="jobExecution : ${jobExecutions}">
+   			<td th:text="${jobExecution.id}">...</td>
+   			<td th:text="${jobExecution.jobId}">...</td>
+   			<td th:text="${jobExecution.jobInstance.jobName}">...</td>
+      		<td th:text="${jobExecution.exitStatus.exitCode}">...</td>
+      		<td th:text="${jobExecution.createTime}">...</td>
+      		<td th:text="${jobExecution.startTime}">...</td>
+      		<td th:text="${jobExecution.endTime}">...</td>
+		</tr>
+    </table>
+    
+</body>
+</html>

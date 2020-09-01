@@ -1,0 +1,25 @@
+**************************************************
+Fichero de Productos para el ejemplo3
+
+Atributos:
+
+- Código
+- Nombre
+- Precio
+- Fecha de Alta
+- Descatalogado
+- Familia
+
+**************************************************
+
+1023442,Ordenador HP 200L,1980.50,2017/03/20,0,HARDWARE
+1035442,Ordenador HP 300L,1280.00,10/12/2017,false,HARDWARE
+7823994,ContaNerd Basic Edition,220.5,15/12/2017,true,SOFTWARE
+1023442,ContaNerd Pro V7,14800.00,10/12/2017,false,SOFTWARE# NO PROBLEM
+1895541,Alfombrilla Mouse Los Pollos Hermanos,12.00,10/12/2017,false,CONSUMIBLE
+1895546,Alfombrilla Mouse Walter White,12.00,10/12/2017,false,CONSUMIBLE
+#1895549,Alfombrilla Mouse Gus Fring,12.00,10/12/2017,false,CONSUMIBLE
+2899355,Tarjeta de Sonido SoundBlaster 16bits,240.21,10/12/2017,false,HARDWARE
+#1023442,Cable paralelo impresora 2m,28.0,10/05/1985,true,HARDWARE
+1023447,Cable paralelo impresora 1m,28.0,10/05/1985,true,HARDWARE
+5063642,Commodore 64,1400.00,10/12/1987,1,HARDWARE

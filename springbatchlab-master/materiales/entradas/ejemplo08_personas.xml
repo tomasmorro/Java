@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<personList>
+    <person>
+        <firstName>Rodolfo</firstName>
+        <lastName>Martínez_XML</lastName>
+    </person>
+    <person>
+        <firstName>Agapito</firstName>
+        <lastName>Cifuentes_XML</lastName>
+    </person>
+    <person>
+        <firstName>Teodoro</firstName>
+        <lastName>Vilchez_XML</lastName>
+    </person>
+    <person>
+        <firstName>Bartola</firstName>
+        <lastName>Fernández_XML</lastName>
+    </person>
+    <person>
+        <firstName>Pepín</firstName>
+        <lastName>Gálvez_XML</lastName>
+    </person>
+    <person>
+        <firstName>Lorena</firstName>
+        <lastName>Lagasca_XML</lastName>
+    </person>
+</personList>
